@@ -6,7 +6,7 @@ import { useRouter, useSegments } from 'expo-router';
 export default function CustomTabBar() {
   const router = useRouter();
   const segments = useSegments();
-  const current = segments[1] ?? segments[0] ?? 'Miki';
+  const current = segments[segments.length - 1] ?? segments[0] ?? 'Miki';
 
   const tabs = ['Miki', 'Choy', 'Mitzu'];
 
